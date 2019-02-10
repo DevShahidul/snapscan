@@ -1,0 +1,198 @@
+
+/* Typography */
+
+
+@font-face {
+	font-family: 'Proxima Nova Bold';
+	src: url('../fonts/Proxima Nova Bold.eot');
+	src: local('☺'), url('../fonts/Proxima Nova Bold.woff') format('woff'), url('../fonts/Proxima Nova Bold.ttf') format('truetype'), url('../fonts/Proxima Nova Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Semibold';
+    src: url('../fonts/ProximaNova-Semibold.eot');
+    src: url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Semibold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Semibold.woff') format('woff'),
+        url('../fonts/ProximaNova-Semibold.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Regular.otf') format('opentype'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{color: #5a707b; font-family: 'ProximaNova-Regular', sans-serif; font-weight: normal; font-size: 16px; line-height: 20px;}
+
+/* // End typography */
+.small-text{font-size: 12px; line-height: 15px;}
+
+.btn{-webkit-transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; transition: all .4s ease-in-out; width: 310px; height: 54px; border-radius: 27px; box-shadow: 0 4px 10px 0 rgba(200, 216, 235, 0.8); font-size: 18px; /*line-height: 52px;*/ text-align: center; color: #ffffff; font-family: 'Proxima Nova Bold'; font-weight: normal; border-color: #4a90e2;}
+.btn:hover,.btn.small:hover, .btn.large:hover{box-shadow: 0 10px 15px 0 #cddced; border-color: #4a90e2; color: #ffffff;}
+.btn.large{width: 380px; height: 60px; line-height: 58px; border-radius: 30px; box-shadow: 0 15px 20px 0 rgba(0, 80, 160, 0.2); background-color: #ffffff;}
+.btn.inactive{background-color: #eff5f9; color: #8ba4c0;}
+.btn.small{width: 149px; height: 38px; border-radius: 25px; border: 2px solid #4a90e2; background-color: transparent;}
+.btn.small.inactive{border: 2px solid #cddced; background-color: #ffffff; color: #cddced;}
+
+
+/* Color class */
+.action-blue-bg,.btn,.btn:hover, .btn.large:hover, .btn.small:hover{background: #4a90e2;}
+.action-blue-color, .btn.small{color: #4a90e2;}
+.brand-blue-light-bg{background: #cddced;}
+.brand-blue-light-color{color: #cddced;}
+.gray-color{color: #9faab4;}
+.gray-bg{background-color: #9faab4;}
+.grey-dark-color, h1,h2,h3{color: #263943;}
+.grey-dark-bg{background-color: #263943;}
+
+/* Select option style */
+.selectric, .styled-select{width: 381px; max-width: 100%; height: 60px; border-radius: 30px;box-shadow: 0 15px 20px 0 rgba(0, 80, 160, 0.2); background-color: #ffffff; border: 0px !important;}
+.selectric-open .selectric{border-radius: 30px 30px 0 0; border: 0px; box-shadow: 0 -7px 15px 0 rgba(0, 80, 160, 0.2);}
+.selectric-open.selectric-above .selectric{border-radius: 0px 0px 30px 30px; border: 0px; border-bottom: 1px solid #eff5f9; box-shadow: 0 15px 20px 0 rgba(0, 80, 160, 0.2);}
+.styled-select, .selectric .label{padding-left: 30px; padding-right: 36px;}
+.selectric .label{width: 100%; height: 100%; margin: 0; line-height: 58px; font-size: 20px; color: #4a90e2; font-family: 'Proxima Nova Bold', sans-serif; font-weight: normal; font-style: normal;}
+.selectric .button{width: 76px; height: 60px; background-image: url(../svgs/icn-arrow-down.svg); background-repeat: no-repeat; background-position: center center; padding-right: 36px; padding-left: 20px;}
+.selectric-items{border-radius: 0 0 30px 30px; box-shadow: 0 15px 20px 0 rgba(59, 119, 187, 0.2); background-color: #ffffff; top: 60px; padding-bottom: 12px; overflow: hidden;}
+.selectric-open .selectric-items{border: 0; border-top: 1px solid #eff5f9 !important;}
+.selectric-open.selectric-above .selectric-items{border-radius: 30px 30px 0 0; border-top: 0px !important; border-bottom: 1px solid #eff5f9 !important;}
+.selectric-items li{padding: 15px 30px; border: 0; font-family: 'Proxima Nova Semibold', sans-serif; font-weight: 600; font-size: 18px; line-height: 22px; color: #143641; font-style: normal; display: block;}
+.selectric-items li:hover{background-color: #eff5f9; color: #4a90e2;}
+
+/* Beginning header style */
+.navbar-light .navbar-nav .nav-item{position: relative;}
+.navbar-light .navbar-nav .nav-item:before{position: absolute; left: 19.5px; top: -15px; width: 0; height: 2px; border-radius: 0 0 2px 2px; content: ""; background-color: #4a90e2;}
+.navbar-light .navbar-nav .nav-item.active:before{width: -webkit-calc(100% - 39px); width: calc(100% - 39px); right: 19.5px; -webkit-transition: all .3s ease-in; -moz-transition: all .3s ease-in; transition: all .3s ease-in;}
+.navbar-light .navbar-nav .nav-item:last-child{border-left: 1px solid #d3dce0;}
+.navbar-light .navbar-nav .nav-link{color: #9faab4; font-size: 15px; line-height: 20px; font-family: 'Proxima Nova Bold', sans-serif; font-weight: normal;}
+.navbar-light .navbar-nav .active>.nav-link{color: #143641;}
+.navbar-expand-lg .navbar-nav .nav-link{padding-right: 19.5px; padding-left: 19.5px;}
+
+.navbar-collapse .btn{width: 100px; font-size: 16px; margin-left: 20px;}
+/* //End header style */
+
+/* Hero section */
+.hero-section{min-height: 866px; background-repeat: no-repeat; background-size: cover; background-position: 0 0; position: relative; z-index: 1;}
+.shap{width: 100%; position: absolute; bottom: 0; z-index: -1;}
+.hero-heading h1{margin-bottom: 50px; margin-top: 84px;}
+
+.signup-form-wrap{border-radius: 10px; box-shadow: 0 15px 20px 0 rgba(59, 119, 187, 0.2); background-color: #ffffff; margin-top: 70px; padding: 33px 40px 35px;}
+.signup-form-wrap .btn{margin-top: 13px; width: 100%;}
+.signup-form-wrap p:not(.small-text){margin-top: 34px; font-size: 14px; line-height: 18px;}
+.signup-form-wrap p em{font-family: 'Proxima Nova Semibold', sans-serif; font-weight: 600;}
+.signup-form-wrap .small-text{margin-top: 27px;}
+input:not([type="button"]){height: 50px; border-radius: 5px; background-color: #f8fafd; border: 0; color: #5a707b; font-size: 15px; line-height: 20px; box-shadow: none;}
+input:not([type="button"]):focus{border: 1px solid #4a90e2; box-shadow: none;}
+
+
+
+
+
+
+
+/* Beginning footer style */
+
+/* //End footer style */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =======================================================================================================
+============================================ Responsive style ========================================== */
+
+/*		Mobile Layout: 320px and 480px and more but less than or equal to 767px.
+----------------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    input[type="text"],input[type="email"],input[type="tel"],input[type="search"],input[type="number"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+
+	
+
+
+
+
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}
+
+
+/*		Tablet Layout: 768px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    input[type="text"],input[type="email"],input[type="tel"],input[type="search"],input[type="number"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+	
+}
+
+
+/*		Tablet Layout: 1024px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    input[type="text"],input[type="email"],input[type="tel"],input[type="search"],input[type="number"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+	
+}
+
+
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	
+}
+
+
+
+
+
+
+
