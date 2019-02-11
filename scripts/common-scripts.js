@@ -23,6 +23,11 @@
         if($("select.styled-select").length){
             $('select.styled-select').selectric();
         }
+        
+        
+        $(".navbar-toggler").click(function(){
+            $("body").toggleClass("shown")
+        })
        
 		
 	})// End ready function.

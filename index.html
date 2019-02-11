@@ -15,7 +15,7 @@
         <!-- Beginning header section -->
         <header class="header">
             <nav class="navbar navbar-expand-lg navbar-light bg-white px-md-5">
-                <a class="navbar-brand" href="#"><img class="logo" src="svgs/logo-snapscan.svg" alt=""></a>
+                <a class="navbar-brand" href="#"><img class="logo" src="svgs/logo-snapscan.svg" alt=""><img class="logo white" src="svgs/logo-snapscan-white.svg" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -37,15 +37,23 @@
                         <a class="nav-link" href="#">Sign in</a>
                       </li>
                     </ul>
+                    <div class="download-play mobi col-sm-12">
+                        <span>Download to pay!</span>
+                        <a href="#"><img src="svgs/icn-mobile-apple.svg" alt=""></a>
+                        <a href="#"><img src="svgs/icn-mobile-play.svg" alt=""></a>
+                    </div>
                     <a href="#" class="btn small">Sign up</a>
+                    <a class="btn small mobi" href="#">Sign in</a>
                 </div>
             </nav>
         </header>
         <!-- //End header section -->
         
         <!-- Beginning hero section -->
-        <section class="hero-section" style="background-image: url(images/SnapScan-web-merch@2x.png);">
-           <img class="shap" src="images/hero-bg-shap.png" alt="">
+        <section class="hero-section">
+            <div class="hero-bg" style="background-image: url(images/SnapScan-web-merch@2x.png);">
+                <img class="shap" src="images/hero-bg-shap.png" alt="">
+            </div>
             <div class="container">
                 <form action="#">
                     <div class="row no-gutters">
@@ -53,11 +61,15 @@
                             <h1>Payments in a snap <br> for every type of Business</h1>
                             <div class="form-group">
                                 <select class="form-control styled-select">
-                                  <option value="0" selected disabled>Select business type</option>
-                                  <option value="1">business type-2</option>
-                                  <option value="2">business type-3</option>
-                                  <option value="3">business type-4</option>
-                                  <option value="4">business type-5</option>
+                                  <option selected disabled hidden>Select business type</option>
+                                  <option>E-Commerce Store</option>
+                                  <option>Retail Store</option>
+                                  <option>Resturant</option>
+                                  <option>Medical Practice</option>
+                                  <option>Educational Institution</option>
+                                  <option>Service Business</option>
+                                  <option>Religious Organisation</option>
+                                  <option>Other</option>
                                 </select>
                             </div>
                         </div>
